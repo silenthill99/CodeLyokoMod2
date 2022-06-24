@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "code_lyoko_mod:block/supercalculateur"
+    },
+    "facing=east": {
+      "model": "code_lyoko_mod:block/supercalculateur",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "code_lyoko_mod:block/supercalculateur",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "code_lyoko_mod:block/supercalculateur",
+      "y": -90
+    }
+  }
+}

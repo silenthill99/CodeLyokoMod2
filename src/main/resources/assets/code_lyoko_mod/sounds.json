@@ -1,0 +1,18 @@
+{
+  "un_monde_sans_danger_version_courte": {
+    "sounds": [
+      {
+        "name": "code_lyoko_mod:code-lyoko-generique-francais-saison-1-hd",
+        "stream": true
+      }
+    ]
+  },
+  "un_monde_sans_danger_version_longue": {
+    "sounds": [
+      {
+        "name": "code_lyoko_mod:code-lyoko-generique-un-monde-sans-danger",
+        "stream": true
+      }
+    ]
+  }
+}

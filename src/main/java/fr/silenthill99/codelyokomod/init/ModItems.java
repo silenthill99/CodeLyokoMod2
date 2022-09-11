@@ -2,12 +2,11 @@ package fr.silenthill99.codelyokomod.init;
 
 import fr.silenthill99.codelyokomod.Main;
 import fr.silenthill99.codelyokomod.utils.CustomArmorMaterials;
+import fr.silenthill99.codelyokomod.utils.CustomItemTiers;
 import fr.silenthill99.codelyokomod.utils.ModItemGroups;
 import fr.silenthill99.codelyokomod.utils.ModSoundEvents;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.MusicDiscItem;
+import net.minecraft.item.*;
 import net.minecraft.util.WeightedRandom;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.fml.RegistryObject;
@@ -37,5 +36,6 @@ public class ModItems
     public static final RegistryObject<Item> LYOKO_GUERRIER_LEGGINGS = ITEMS.register("lyoko_guerrier_leggings", () -> new ArmorItem(CustomArmorMaterials.LYOKO_GUERRIER_ARMOR, EquipmentSlotType.LEGS, new Item.Properties().tab(ModItemGroups.ITEMS_DE_CODE_LYOKO)));
     public static final RegistryObject<Item> LYOKO_GUERRIER_BOOTS = ITEMS.register("lyoko_guerrier_boots", () -> new ArmorItem(CustomArmorMaterials.LYOKO_GUERRIER_ARMOR, EquipmentSlotType.FEET, new Item.Properties().tab(ModItemGroups.ITEMS_DE_CODE_LYOKO)));
 
-
+    //Armes
+    public static final RegistryObject<Item> KATANA = ITEMS.register("katana", () -> new SwordItem(CustomItemTiers.KATANA, 2, -1.0f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_MATERIALS)));
 }

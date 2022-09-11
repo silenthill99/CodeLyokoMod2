@@ -1,6 +1,5 @@
 package fr.silenthill99.codelyokomod;
 
-import fr.silenthill99.codelyokomod.init.ModBiomes;
 import fr.silenthill99.codelyokomod.init.ModBlocks;
 import fr.silenthill99.codelyokomod.init.ModEntityTypes;
 import fr.silenthill99.codelyokomod.init.ModItems;
@@ -45,7 +44,6 @@ public class Main
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onEntityAttributeCreation);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-        ModBiomes.BIOMES.register(bus);
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
         ModSoundEvents.SOUND_EVENT.register(bus);

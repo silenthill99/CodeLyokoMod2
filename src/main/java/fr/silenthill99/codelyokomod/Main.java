@@ -38,12 +38,12 @@ public class Main
 
     public Main()
     {
-
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::clientSetup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onEntityAttributeCreation);
-
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        bus.addListener(this::setup);
+        bus.addListener(this::clientSetup);
+        bus.addListener(this::onEntityAttributeCreation);
+
         ModItems.ITEMS.register(bus);
         ModBlocks.BLOCKS.register(bus);
         ModSoundEvents.SOUND_EVENT.register(bus);

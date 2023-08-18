@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "ingredient": {
+    "item": "minecraft:iron_helmet"
+  },
+  "result": "code_lyoko_mod:lyoko_guerrier_helmet",
+  "count": 1
+}

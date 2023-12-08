@@ -20,7 +20,7 @@ public class ModBlocks
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, Main.MODID);
 
     public static final RegistryObject<Block> SUPER_CALCULATEUR = createBlock("supercalculateur", SuperCalculateur::new);
-    public static final RegistryObject<Block> ENTRY_BLOCK = createBlock("entry_block", () -> new Block(AbstractBlock.Properties.copy(Blocks.BLACK_WOOL).noCollission()));
+    public static final RegistryObject<Block> ENTRY_BLOCK = createBlock("entry_block", () -> new Block(AbstractBlock.Properties.copy(Blocks.BLACK_WOOL).noCollission().noDrops()));
 
     private static RegistryObject<Block> createBlock(String name, Supplier<? extends Block> supplier) {
         RegistryObject<Block> bloc = BLOCKS.register(name, supplier);

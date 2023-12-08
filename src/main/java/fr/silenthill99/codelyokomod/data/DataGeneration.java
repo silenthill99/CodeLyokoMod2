@@ -1,6 +1,7 @@
 package fr.silenthill99.codelyokomod.data;
 
 import fr.silenthill99.codelyokomod.Main;
+import fr.silenthill99.codelyokomod.data.loot_tables.LootTableGenerator;
 import fr.silenthill99.codelyokomod.data.models.BlockstateGenerator;
 import fr.silenthill99.codelyokomod.data.recipes.RecipeGenerator;
 import net.minecraft.data.DataGenerator;
@@ -22,7 +23,9 @@ public class DataGeneration
             generator.addProvider(new BlockstateGenerator(generator, helper));
         }
 
-        if (event.includeServer())
+        if (event.includeServer()) {
             generator.addProvider(new RecipeGenerator(generator));
+            generator.addProvider(new LootTableGenerator(generator));
+        }
     }
 }

@@ -26,5 +26,9 @@ public class RecipeGenerator extends RecipeProvider
         SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.IRON_HELMET), ModItems.LYOKO_GUERRIER_HELMET.get())
                 .unlocks("unlock", InventoryChangeTrigger.Instance.hasItems(Items.IRON_HELMET))
                 .save(consumer, new ResourceLocation(Main.MODID, "lyoko_guerrier_helmet"));
+
+        SingleItemRecipeBuilder.stonecutting(Ingredient.of(Items.IRON_CHESTPLATE), ModItems.LYOKO_GUERRIER_CHESTPLATE.get())
+                .unlocks("unlock", InventoryChangeTrigger.Instance.hasItems(Items.IRON_CHESTPLATE))
+                .save(consumer, new ResourceLocation(Main.MODID, "lyoko_guerrier_chestplate"));
     }
 }

@@ -7,10 +7,10 @@ import net.minecraft.data.DataGenerator;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-public class BlockstateGenerator extends BlockStateProvider {
+public class BlockStateGenerator extends BlockStateProvider {
 
 
-    public BlockstateGenerator(DataGenerator gen, ExistingFileHelper exFileHelper) {
+    public BlockStateGenerator(DataGenerator gen, ExistingFileHelper exFileHelper) {
         super(gen, Main.MODID, exFileHelper);
     }
 

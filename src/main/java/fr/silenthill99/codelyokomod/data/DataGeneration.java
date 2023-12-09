@@ -2,7 +2,7 @@ package fr.silenthill99.codelyokomod.data;
 
 import fr.silenthill99.codelyokomod.Main;
 import fr.silenthill99.codelyokomod.data.loot_tables.LootTableGenerator;
-import fr.silenthill99.codelyokomod.data.models.BlockstateGenerator;
+import fr.silenthill99.codelyokomod.data.models.BlockStateGenerator;
 import fr.silenthill99.codelyokomod.data.recipes.RecipeGenerator;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -20,7 +20,7 @@ public class DataGeneration
         ExistingFileHelper helper = event.getExistingFileHelper();
 
         if (event.includeClient()) {
-            generator.addProvider(new BlockstateGenerator(generator, helper));
+            generator.addProvider(new BlockStateGenerator(generator, helper));
         }
 
         if (event.includeServer()) {

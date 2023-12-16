@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "parent": "code_lyoko_mod:item/lyoko_guerrier_boots"
+  }
+}
